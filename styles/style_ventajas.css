@@ -1,0 +1,20 @@
+/*Paleta de colores de más a menos oscuro
+#005200 — verde muy oscuro
+#005c00
+#006600
+#007000
+#007b00
+#258d19
+#4ea93b
+#71c55b 
+#92e27a 
+#b4ff9a — verde claro
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0px solid red;
+    font-family: 'Libertinus Serif', serif;
+}
