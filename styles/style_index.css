@@ -8,7 +8,7 @@
 #4ea93b
 #71c55b 
 #92e27a 
-#b4ff9a — verde claro
+#d4ffba — verde claro
 */
 
 * {
@@ -25,7 +25,7 @@
     text-align: center;  /*Solo para texto*/
     margin: 0px auto;
     padding: 15px;
-    background-color: #f7f7f7;
+    background-color: #d4ffba;
 }
 
 /* Contenedor principal: una sola caja con borde */
@@ -35,7 +35,7 @@
     padding: 0;
     display: flex;
     background-color: #258d19;
-    border: 3px solid #f7f7f7;       
+    border: 3px solid #d4ffba;       
     overflow: hidden;               /* Para que las esquinas del borde se vean bien */
 }
 
@@ -43,12 +43,12 @@
     flex: 1; 
     text-align: center;
     padding: 15px 0;
-    border-right: 2px solid #f7f7f7;
+    border-right: 2px solid #d4ffba;
 }
 
 .barra-navegacion ul li a {
     display: block;
-    color: #f7f7f7;
+    color: #d4ffba;
     text-decoration: none;
     font-size: 22px;
     padding: 0 10px;
@@ -94,3 +94,115 @@
     padding: 10px;
 }
 
+.significado_nutria {
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(135deg, #d4ffba, #4ea93b)
+}
+
+.significado_nutria h2 {
+    font-size: 50px;
+    color: #005200;  
+}
+
+.contenido-significado {
+    display: flex;
+    font-size: 22px;
+    color: black;
+    padding-top: 30px;
+    align-items: center;
+}
+.contenido-significado img {
+    margin-left: 60px;
+    border: 3px solid #005200;
+    border-radius: 10px;
+}
+
+.contenido-significado p {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.importancia_nutria {
+    padding: 50px;
+    text-align: center;
+    background-image: url('../images/Fondo_importancia.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.importancia_nutria h2 {
+    font-size: 50px;
+    color: #005200;  
+}
+
+.contenido-importancia {
+    display: flex;
+    font-size: 22px;
+    color: black;
+    padding-top: 30px;
+    align-items: center;
+}
+
+.contenido-importancia p {
+    padding-left: 60px;
+    padding-right: 80px;
+    max-width: 60%;
+}
+
+.contenido-importancia iframe {
+    margin-right: 60px;
+    border: 3px solid #005200;
+    border-radius: 10px;
+}
+
+.footer-contenido {
+    background: #005200;
+    display: flex;
+    color: #92e27a ;
+    padding: 20px 130px;
+}
+
+.footer-columna {
+    flex: 1;              
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    text-align: center;   
+    font-size: 18px;
+    color: #92e27a ;
+}
+
+.footer-columna h2 {
+    border-bottom: 2px solid #92e27a ;
+    padding-bottom: 10px;
+}
+
+.footer-columna p {
+    margin: 10px;
+}
+
+.footer-columna ul {
+    padding-top: 10px;
+}
+
+.footer-columna ul li {
+    padding-top: 2px;
+}
+
+.footer-columna ul li a {
+    text-decoration: none;
+    color: #92e27a ;
+}
+
+.footer-redes{
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+.footer-inferior {
+    background-color: #92e27a ;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}
