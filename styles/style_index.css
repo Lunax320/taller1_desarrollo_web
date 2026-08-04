@@ -109,7 +109,10 @@
     gap: 30px;  
 }
 
-.decoracion-header-contenido h1, .decoracion2-header-contenido h1 {
+.decoracion-header-contenido h1, 
+.decoracion2-header-contenido h1, 
+.decoracion3-header-contenido h1,
+.decoracion4-header-contenido h1 {
     font-size: 70px;
     color: #005200;       
     background-color: rgba(199, 255, 166, 0.6);
@@ -118,7 +121,10 @@
    
 }
 
-.decoracion-header-contenido p, .decoracion2-header-contenido p {
+.decoracion-header-contenido p, 
+.decoracion2-header-contenido p,
+.decoracion3-header-contenido p,
+.decoracion4-header-contenido p {
     font-size: 22px;
     color: black;
     background-color: rgba(199, 255, 166, 0.6);
@@ -152,7 +158,55 @@
 }
 
 /*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER VENTAJAS---------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.decoracion-header-ventajas {
+    background-image: url('../images/fondo_ventajas.png');
+    background-size: cover;        
+    background-position: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.decoracion3-header-contenido {
+    max-width: 55%;
+    text-align: center;   
+    padding-left: 60px;   
+    padding-right: 60px;   
+    display: flex;
+    flex-direction: column;
+    gap: 30px;  
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER DESAFIOS---------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+.decoracion-header-desafios {
+    background-image: url('../images/fondo_desafios.png');
+    background-size: cover;        
+    background-position: center;
+    justify-content: left;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.decoracion4-header-contenido {
+    max-width: 55%;
+    text-align: center;   
+    padding-left: 60px;   
+    padding-right: 60px;   
+    display: flex;
+    flex-direction: column;
+    gap: 30px;  
+    margin-left: auto;
+}
+
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
 /*----------------------------------------SECCIONES------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
 
 /*-------------------------------------------------------------------------------------------*/
@@ -321,6 +375,210 @@
     background-color: #ffffff;
 }
 
+/*-------------------------------------------------------------------------------------------*/
+/*------------------------------------VENTAJAS - VENTAJAS------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+.ventajas {
+    padding: 50px;
+    background: linear-gradient(135deg, #d4ffba, #4ea93b);
+    text-align: center;
+}
+
+.ventajas_titulo {
+    border-top: 6px solid #005200;
+    border-bottom: 6px solid #005200;
+}
+
+.ventajas_titulo h2 {
+    font-size: 35px;
+    color: #005200;
+}
+
+.ventajas h2 {
+    font-size: 30px;
+    color: #005200;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+.ventajas p {
+    font-size: 22px;
+    color: black;
+    max-width: 80%;
+    margin: 0 auto 40px auto;
+}
+
+.ventajas ul {
+    text-align: left;
+    max-width: 60%;
+    margin: 0 auto;
+    font-size: 20px;
+    color: black;
+}
+
+.ventajas ul li::marker {
+    color: #258d19;  
+}
+
+.ventajas ol {
+    text-align: left;
+    max-width: 60%;
+    margin: 0 auto;
+    font-size: 20px;
+    color: black;
+}
+
+.ventajas ol li::marker {
+    color: #4ea93b;
+    font-weight: bold;
+}
+
+.ventajas ul li,
+.ventajas ol li {
+    margin-bottom: 10px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*--------------------------------------GALERIA - INDICE-------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+.indice-galeria {
+    padding: 20px;
+    text-align: center;
+    background: #258d19;
+    border-bottom: 6px solid #005200;
+}
+
+.indice-galeria h2 {
+    font-size: 40px;
+    color: #d4ffba;
+    margin-bottom: 20px;
+}
+
+.indice-galeria ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.indice-galeria ul li a {
+    color: #d4ffba;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.indice-galeria ul li a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*--------------------------------------GALERIA - INDICE-------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+.seccion-galeria {
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(135deg, #d4ffba, #71c55b);
+    border-bottom: 6px solid #258d19;
+}
+
+.seccion-galeria h2 {
+    font-size: 40px;
+    color: #005200;
+    margin-bottom: 30px;
+}
+
+.subseccion-galeria {
+    border: 3px solid #005200;
+    background: #d4ffba;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 70%;
+    border-radius: 15px;
+}
+
+.subseccion-galeria h3 {
+    font-size: 28px;
+    color: #005200;
+    margin-bottom: 15px;
+}
+
+.subseccion-galeria img {
+    width: 400px;
+    height: 250px;
+    border: 3px solid #005200;
+    border-radius: 10px;
+}
+
+.subseccion-galeria p {
+    font-size: 18px;
+    color: black;
+    margin-top: 15px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*----------------------------------GALERIA - CURIOSIDADES-----------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+.lista-curiosidades {
+    text-align: left;
+    max-width: 70%;
+    margin: 0 auto;
+    font-size: 20px;
+    color: black;
+    list-style-type: disc;
+}
+
+.lista-curiosidades li::marker {
+    color: #258d19;
+}
+
+.lista-curiosidades li {
+    margin-bottom: 10px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------GALERIA - ENLACES-------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+.seccion-enlaces {
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(135deg, #4ea93b, #005200);
+}
+
+.seccion-enlaces h2 {
+    font-size: 40px;
+    color: #d4ffba;
+    margin-bottom: 30px;
+}
+
+.enlaces-interes {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.enlaces-interes li a {
+    color: #d4ffba;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.enlaces-interes li a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
 /*-------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
 /*-----------------------------------------FOOTER--------------------------------------------*/
