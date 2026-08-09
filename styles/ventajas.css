@@ -1,0 +1,289 @@
+/*Paleta de colores de más a menos oscuro
+#005200 — verde muy oscuro
+#005c00
+#006600
+#007000
+#007b00
+#258d19
+#4ea93b
+#71c55b 
+#92e27a 
+#d4ffba — verde claro
+*/
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*---------------------------------GENERAL DEL DOCUMENTO*------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0px solid red;
+    font-family: 'Libertinus Serif', serif;
+}
+
+h1 {
+    text-decoration: underline;
+    text-decoration-color: #005200;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 4px;
+}
+
+h2 {
+    text-decoration: underline;
+    text-decoration-color: #005200;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+}
+
+h3 {
+    text-decoration: underline;
+    text-decoration-color: #005200;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+}
+
+li:hover {
+    text-decoration: underline;
+    text-decoration-color: #d4ffba;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*------------------------------------BARRA NAVEGACIÓN---------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+.mensaje-inicial {
+    font-size: 22px;
+    color: green;
+    text-align: center;  /*Solo para texto*/
+    margin: 0px auto;
+    padding: 15px;
+    background-color: #d4ffba;
+}
+
+.barra-navegacion {
+    position: sticky;
+    top: 0;           /* Pegar a 0 píxeles de la parte superior */
+    z-index: 1000;    /* La barra siempre quede por encima de fotos o textos */
+}
+
+/* Contenedor principal: una sola caja con borde */
+.barra-navegacion ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #258d19;
+    border: 3px solid #d4ffba;       
+    overflow: hidden;               /* Para que las esquinas del borde se vean bien */
+}
+
+.barra-navegacion ul li {
+    flex: 1; 
+    text-align: center;
+    padding: 15px 0;
+    border-right: 2px solid #d4ffba;
+}
+
+.barra-navegacion ul li a {
+    display: block;
+    color: #d4ffba;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 0 10px;
+}
+
+.barra-navegacion ul li:hover {
+    background-color: rgba(199, 255, 166, 0.6);
+}
+
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*------------------------------------------BODY---------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+ 
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER VENTAJAS---------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+.header-ventajas {
+    background-image: url('../images/fondo_ventajas.png');
+    background-size: cover;        
+    background-position: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.texto-header-ventajas {
+    max-width: 55%;
+    text-align: center;   
+    padding-left: 60px;   
+    padding-right: 60px;   
+    display: flex;
+    flex-direction: column;
+    gap: 30px;  
+}
+
+.texto-header-ventajas h1 {
+    font-size: 70px;
+    color: #005200;       
+    background-color: rgba(199, 255, 166, 0.6);
+    border: 3px solid #005200;
+    border-radius: 10px;
+}
+
+.texto-header-ventajas p {
+    font-size: 22px;
+    color: black;
+    background-color: rgba(199, 255, 166, 0.6);
+    border: 3px solid #005200;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*----------------------------------------SECCIONES------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------*/
+/*--------------------------------VENTAJAS - TARJETAS----------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+.ventajas-seccion1 {
+    padding: 60px 40px;
+    background-image: url('../images/fondo_ventaja_cientifica.png');
+    background-size: cover;        
+    background-position: center;
+    border-top: 8px solid #258d19;
+    border-bottom: 8px solid #258d19;
+    text-align: center;
+}
+
+.ventajas-seccion2 {
+    padding: 60px 40px;
+    background-image: url('../images/fondo_ventaja_sociedad.png');
+    background-size: cover;        
+    background-position: center;
+    text-align: center;
+}
+
+.ventajas-seccion1 h2,
+.ventajas-seccion2 h2
+ {
+    font-size: 45px;
+    color: #005200;
+    margin-bottom: 40px;
+}
+
+.tarjetas-ventajas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tarjeta-ventaja {
+    background: #92e27a;
+    border: 3px solid #258d19;
+    border-radius: 15px;
+    padding: 25px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icono-tarjeta {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.imagen-tarjeta {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border: 2px solid #005200;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-ventaja h3 {
+    font-size: 22px;
+    color: #005200;
+    margin-bottom: 10px;
+}
+
+.tarjeta-ventaja p {
+    font-size: 16px;
+    color:black;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*-----------------------------------------FOOTER--------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+.footer-contenido {
+    background: #005200;
+    display: flex;
+    color: #92e27a ;
+    padding: 20px 130px;
+    border-top: 6px solid #258d19;
+}
+
+.footer-columna {
+    flex: 1;              
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    text-align: center;   
+    font-size: 18px;
+    color: #92e27a ;
+}
+
+.footer-columna h2 {
+    border-bottom: 2px solid #92e27a ;
+    padding-bottom: 10px;
+}
+
+.footer-columna p {
+    margin: 10px;
+}
+
+.footer-columna ul {
+    padding-top: 10px;
+}
+
+.footer-columna ul li {
+    padding-top: 2px;
+}
+
+.footer-columna ul li a {
+    text-decoration: none;
+    color: #92e27a ;
+}
+
+.footer-redes{
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+.footer-inferior {
+    background-color: #92e27a ;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}

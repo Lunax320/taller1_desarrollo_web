@@ -1,0 +1,211 @@
+/*Paleta de colores de más a menos oscuro
+#005200 — verde muy oscuro
+#005c00
+#006600
+#007000
+#007b00
+#258d19
+#4ea93b
+#71c55b 
+#92e27a 
+#d4ffba — verde claro
+*/
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*---------------------------------GENERAL DEL DOCUMENTO*------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0px solid red;
+    font-family: 'Libertinus Serif', serif;
+}
+
+h1 {
+    text-decoration: underline;
+    text-decoration-color: #005200;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 4px;
+}
+
+h2 {
+    text-decoration: underline;
+    text-decoration-color: #005200;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+}
+
+h3 {
+    text-decoration: underline;
+    text-decoration-color: #005200;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+}
+
+li:hover {
+    text-decoration: underline;
+    text-decoration-color: #d4ffba;
+}
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*------------------------------------BARRA NAVEGACIÓN---------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+.mensaje-inicial {
+    font-size: 22px;
+    color: green;
+    text-align: center;  /*Solo para texto*/
+    margin: 0px auto;
+    padding: 15px;
+    background-color: #d4ffba;
+}
+
+.barra-navegacion {
+    position: sticky;
+    top: 0;           /* Pegar a 0 píxeles de la parte superior */
+    z-index: 1000;    /* La barra siempre quede por encima de fotos o textos */
+}
+
+/* Contenedor principal: una sola caja con borde */
+.barra-navegacion ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #258d19;
+    border: 3px solid #d4ffba;       
+    overflow: hidden;               /* Para que las esquinas del borde se vean bien */
+}
+
+.barra-navegacion ul li {
+    flex: 1; 
+    text-align: center;
+    padding: 15px 0;
+    border-right: 2px solid #d4ffba;
+}
+
+.barra-navegacion ul li a {
+    display: block;
+    color: #d4ffba;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 0 10px;
+}
+
+.barra-navegacion ul li:hover {
+    background-color: rgba(199, 255, 166, 0.6);
+}
+
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*------------------------------------------BODY---------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER DESAFIOS---------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+.header-desafios {
+    background-image: url('../images/fondo_desafios.png');
+    background-size: cover;        
+    background-position: center;
+    justify-content: left;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.texto-header-desafios {
+    max-width: 55%;
+    text-align: center;   
+    padding-left: 60px;   
+    padding-right: 60px;   
+    display: flex;
+    flex-direction: column;
+    gap: 30px;  
+    margin-left: auto;
+}
+
+.texto-header-desafios h1 {
+    font-size: 70px;
+    color: #005200;       
+    background-color: rgba(199, 255, 166, 0.6);
+    border: 3px solid #005200;
+    border-radius: 10px;
+   
+}
+
+.texto-header-desafios p {
+    font-size: 22px;
+    color: black;
+    background-color: rgba(199, 255, 166, 0.6);
+    border: 3px solid #005200;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*-----------------------------------------FOOTER--------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+.footer-contenido {
+    background: #005200;
+    display: flex;
+    color: #92e27a ;
+    padding: 20px 130px;
+    border-top: 6px solid #258d19;
+}
+
+.footer-columna {
+    flex: 1;              
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    text-align: center;   
+    font-size: 18px;
+    color: #92e27a ;
+}
+
+.footer-columna h2 {
+    border-bottom: 2px solid #92e27a ;
+    padding-bottom: 10px;
+}
+
+.footer-columna p {
+    margin: 10px;
+}
+
+.footer-columna ul {
+    padding-top: 10px;
+}
+
+.footer-columna ul li {
+    padding-top: 2px;
+}
+
+.footer-columna ul li a {
+    text-decoration: none;
+    color: #92e27a ;
+}
+
+.footer-redes{
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+.footer-inferior {
+    background-color: #92e27a ;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}

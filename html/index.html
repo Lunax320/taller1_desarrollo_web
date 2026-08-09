@@ -13,7 +13,7 @@
       content="nutriología, nutrias, conservación, ciencia, educación ambiental"
     />
     <!--ENLACE CON ESTILO CSS-->
-    <link rel="stylesheet" href="../styles/style_index.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
 
     <!--FUENTE GOOGLE-->
     <link
@@ -24,7 +24,7 @@
 
   <!--DISEÑO DE PÁGINA-->
   <body>
-    <!--POR FUERA DE HEADER POR DESPLAZAMIENTO DE LA BARRA DE NAVEGACIÓN-->
+    <!--BARRA DE NAVEGACIÓN POR FUERA DE HEADER (STICKY)-->
     <!--MENSAJE INICIAL DE HEADER-->
     <p class="mensaje-inicial">
       Bienvenido a la mejor página del mundo mundial sobre nutriología 🦦
@@ -52,8 +52,8 @@
     </nav>
     <header>
       <!--DECORACIÓN DE HEADER -->
-      <div class="decoracion-header-index">
-        <div class="decoracion-header-contenido">
+      <div class="header-index">
+        <div class="texto-header-index">
           <h1>NUTRIOLOGÍA</h1>
           <p>
             Este espacio está dedicado la hermosa causa de reivindicar el
@@ -70,15 +70,15 @@
     </header>
 
     <main>
-      <section id="significado" class="significado_nutriologia">
+      <!--SECCION: SIGNIFICADO DE LA NUTRIOLOGIA-->
+      <section class="significado_nutriologia">
         <h2>¿QUÉ ES LA NUTRIOLOGÍA?</h2>
         <div class="contenido-nutriologia">
+          <!--PRUEBA DE IMAGEN FLOTANTE-->
           <img
             src="../images/nutrias_significado.webp"
             alt="Nutria nadando en el agua"
-            class="imagen_nutria"
-            height="280"
-            width="600"
+            class="imagen-flotante"
           />
           <p>
             Etimológicamente, "nutriología" es un híbrido perfectamente válido,
@@ -89,12 +89,19 @@
             confundir la astronomía con la astrología. La nutriología legítima
             estudia a las nutrias, su conducta, su dieta, sus madrigueras y su
             rol como especies clave en los ecosistemas riparios. No tiene nada
-            que ver con contar calorías, sino de contar nutrias.
+            que ver con contar calorías, sino de contar nutrias. Las nutrias son
+            mamíferos semiacuáticos que pertenecen a la familia Mustelidae, la
+            misma de los tejones, comadrejas y hurones. Existen 13 especies de
+            nutrias distribuidas en todos los continentes excepto Australia y la
+            Antártida. Cada una de ellas ha desarrollado adaptaciones
+            sorprendentes, por ejemplo, las nutrias marinas que usan piedras
+            como herramientas para romper moluscos.
           </p>
         </div>
       </section>
 
-      <section id="importancia" class="importancia_nutria">
+      <!--SECCION: IMPORTANCIA DE LAS NUTRIAS-->
+      <section class="importancia_nutria">
         <h2>IMPORTANCIA DE LA NUTRIOLOGÍA</h2>
         <div class="contenido-importancia">
           <p>
@@ -109,6 +116,7 @@
             estrategias de conservación.
           </p>
 
+          <!--VIDEO YOUTUBE NUTRIAS -->
           <iframe
             width="3060"
             height="315"
@@ -127,6 +135,73 @@
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
+        </div>
+      </section>
+
+      <!-- ENLACES DE INTERES-->
+      <section class="seccion-enlaces">
+        <h2>ENLACES DE INTERÉS</h2>
+        <div class="tarjetas-enlaces">
+          <!-- Tarjeta 1 Wikipedia -->
+          <article class="tarjeta-enlace">
+            <img
+              src="../images/logo_wikipedia.png"
+              alt="Wikipedia logo"
+              class="imagen-enlace"
+            />
+            <a href="https://es.wikipedia.org/wiki/Lutrinae" target="_blank">
+              Wikipedia - Nutrias
+            </a>
+            <p>Información general sobre nutrias</p>
+          </article>
+
+          <!-- Tarjeta 2 WWF -->
+          <article class="tarjeta-enlace">
+            <img
+              src="../images/logo_wwf.png"
+              alt="WWF logo"
+              class="imagen-enlace"
+            />
+            <a
+              href="https://www.worldwildlife.org/resources/explainers/wildlife-climate-heroes/sea-otters-and-kelp-a-tale-of-cute-charisma-and-otterly-amazing-climate-heroism/"
+              target="_blank"
+            >
+              WWF - Nutrias
+            </a>
+            <p>Nutrias como heroínas del clima</p>
+          </article>
+
+          <!-- Tarjeta 3 National Geographic -->
+          <article class="tarjeta-enlace">
+            <img
+              src="../images/logo_natgeo.png"
+              alt="National Geographic logo"
+              class="imagen-enlace"
+            />
+            <a
+              href="https://www.nationalgeographic.com/animals/mammals/facts/otters-1"
+              target="_blank"
+            >
+              National Geographic
+            </a>
+            <p>Fotos y datos de nutrias</p>
+          </article>
+
+          <!-- Tarjeta 4 RED LIST -->
+          <article class="tarjeta-enlace">
+            <img
+              src="../images/logo_red_list.png"
+              alt="IUCN logo"
+              class="imagen-enlace"
+            />
+            <a
+              href="https://www.iucnredlist.org/search?query=otter&searchType=species"
+              target="_blank"
+            >
+              Lista Roja - Nutrias
+            </a>
+            <p>Estado de conservación</p>
+          </article>
         </div>
       </section>
     </main>
