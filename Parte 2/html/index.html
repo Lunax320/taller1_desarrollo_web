@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutrialandia</title>
+    <!--ENLACE CON ESTILO CSS-->
+    <link rel="stylesheet" href="../styles/styles.css" />
+
+    <!--FUENTE GOOGLE-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libertinus+Serif:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Por fuera para quedar fijado -->
+    <div class="top-contenido">
+      <!-- Imagen del logo -->
+      <img
+        class="logo-tienda"
+        src="../images/logo_nutrilandia.png"
+        alt="Logo Nutrialandia"
+      />
+      <h1>NUTRIALANDIA</h1>
+
+      <!-- Imagen carrito -->
+      <img
+        class="imagen-carrito"
+        src="../images/carrito_compras.png"
+        alt="Carrito de compras"
+      />
+    </div>
+
+    <header class="header-tienda">
+      <!--DECORACIÓN DE HEADER -->
+      <div class="header-index">
+        <div class="texto-header-index">
+          <h1>NUTRIALANDIA</h1>
+          <p>
+            Este espacio está dedicado a mantener la causa de reivindicar el
+            verdadero significado de la nutriología y cuestionar todas las
+            implicaciones que su mal uso ha traído a la humanidad. Durante
+            décadas, el término ha sido tergiversado, asociado erróneamente con
+            prácticas que nada tienen que ver con el estudio y la conservación
+            de las nutrias. Es momento de devolverle su esencia, de educar y de
+            generar conciencia sobre la importancia de estos increíbles animales
+            en nuestros ecosistemas acuáticos.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="tienda">
+        <h2>NUESTRA TIENDA</h2>
+        <div class="contenedor-tarjetas" id="contenedor-tarjetas">
+          <!-- Tarjeta 1 - Camiseta Nutria -->
+          <article class="tarjeta-producto" data-id="1">
+            <img
+              class="imagen-producto"
+              src="../images/camiseta_nutria.avif"
+              alt="Camiseta Nutria Flores"
+            />
+            <h3>Camiseta Nutria Flores</h3>
+            <p class="precio">$35.000</p>
+            <div class="atributos-producto">
+              <p><strong>Talla:</strong> S, M, L, XL</p>
+              <p><strong>Material:</strong> Algodón 100%</p>
+              <p><strong>Color:</strong> Blanco / Azul marino</p>
+            </div>
+            <button class="btn-agregar" data-id="1">Agregar al Carrito</button>
+          </article>
+
+          <!-- Tarjeta 2: Taza Nutria Feliz -->
+          <article class="tarjeta-producto" data-id="2">
+            <img
+              class="imagen-producto"
+              src="../images/taza_nutria_feliz.avif"
+              alt="Taza Nutria Feliz"
+            />
+            <h3>Taza Nutria Feliz</h3>
+            <p class="precio">$18.000</p>
+            <div class="atributos-producto">
+              <p><strong>Capacidad:</strong> 350 ml</p>
+              <p><strong>Material:</strong> Cerámica</p>
+              <p><strong>Color:</strong> Blanco con estampado</p>
+            </div>
+            <button class="btn-agregar" data-id="2">Agregar al Carrito</button>
+          </article>
+
+          <!-- Tarjeta 3: Gorra Nutria Exploradora -->
+          <article class="tarjeta-producto" data-id="3">
+            <img
+              class="imagen-producto"
+              src="../images/gorra_nutria_estampada.avif"
+              alt="Gorra Nutria Estampada"
+            />
+            <h3>Gorra Nutria Estampada</h3>
+            <p class="precio">$28.000</p>
+            <div class="atributos-producto">
+              <p><strong>Talla:</strong> Ajustable</p>
+              <p><strong>Material:</strong> Algodón / Poliéster</p>
+              <p><strong>Color:</strong> Verde oliva</p>
+            </div>
+            <button class="btn-agregar" data-id="3">Agregar al Carrito</button>
+          </article>
+
+          <!-- Tarjeta 4: Sticker Pack Nutrias -->
+          <article class="tarjeta-producto" data-id="4">
+            <img
+              class="imagen-producto"
+              src="../images/sticker_nutria.avif"
+              alt="Sticker Pack Nutrias"
+            />
+            <h3>Sticker Pack Nutrias</h3>
+            <p class="precio">$12.000</p>
+            <div class="atributos-producto">
+              <p><strong>Cantidad:</strong> 10 stickers</p>
+              <p><strong>Material:</strong> Vinil</p>
+              <p><strong>Tamaño:</strong> 5-8 cm</p>
+            </div>
+            <button class="btn-agregar" data-id="4">Agregar al Carrito</button>
+          </article>
+
+          <!-- Tarjeta 5: Cuaderno Nutria Acuática -->
+          <article class="tarjeta-producto" data-id="5">
+            <img
+              class="imagen-producto"
+              src="../images/cuaderno_nutrias.avif"
+              alt="Cuaderno Nutria Acuática"
+            />
+            <h3>Cuaderno Nutria Acuática</h3>
+            <p class="precio">$22.000</p>
+            <div class="atributos-producto">
+              <p><strong>Hojas:</strong> 100</p>
+              <p><strong>Tamaño:</strong> A5</p>
+              <p><strong>Encuadernación:</strong> Espiral</p>
+            </div>
+            <button class="btn-agregar" data-id="5">Agregar al Carrito</button>
+          </article>
+
+          <!-- Tarjeta 6: Llavero Nutria Dormilona -->
+          <article class="tarjeta-producto" data-id="6">
+            <img
+              class="imagen-producto"
+              src="../images/llavero_nutria_dormilona.avif"
+              alt="Llavero Nutria Dormilona"
+            />
+            <h3>Llavero Nutria Dormilona</h3>
+            <p class="precio">$9.000</p>
+            <div class="atributos-producto">
+              <p><strong>Material:</strong> Acrílico</p>
+              <p><strong>Tamaño:</strong> 5 cm</p>
+              <p><strong>Incluye:</strong> Argolla metálica</p>
+            </div>
+            <button class="btn-agregar" data-id="6">Agregar al Carrito</button>
+          </article>
+
+          <!-- Tarjeta 7: Peluche nutria -->
+          <article class="tarjeta-producto" data-id="7">
+            <img
+              class="imagen-producto"
+              src="../images/peluche_nutria.avif"
+              alt="Peluche Nutria"
+            />
+            <h3>Peluche de Nutria</h3>
+            <p class="precio">$45.000</p>
+            <div class="atributos-producto">
+              <p><strong>Tamaño:</strong> 30 cm</p>
+              <p><strong>Material:</strong> Felpa hipoalergénica</p>
+              <p><strong>Relleno:</strong> Fibra de poliéster</p>
+            </div>
+            <button class="btn-agregar" data-id="7">Agregar al Carrito</button>
+          </article>
+
+          <!-- Tarjeta 8: Libro para Colorear de Nutrias -->
+          <article class="tarjeta-producto" data-id="8">
+            <img
+              class="imagen-producto"
+              src="../images/libro_colorear_nutrias.avif"
+              alt="Libro para Colorear de Nutrias"
+            />
+            <h3>Libro para Colorear</h3>
+            <p class="precio">$15.000</p>
+            <div class="atributos-producto">
+              <p><strong>Páginas:</strong> 24 ilustraciones</p>
+              <p><strong>Temática:</strong> Nutrias en su hábitat natural</p>
+              <p>
+                <strong>Incluye:</strong> Diseños florales y patrones relajantes
+              </p>
+            </div>
+            <button class="btn-agregar" data-id="8">Agregar al Carrito</button>
+          </article>
+
+          <!-- Tarjeta 9: Póster Nutria Gigante -->
+          <article class="tarjeta-producto" data-id="9">
+            <img
+              class="imagen-producto"
+              src="../images/poster_nutria.avif"
+              alt="Póster Comico Nutria"
+            />
+            <h3>Póster Cómico Nutria</h3>
+            <p class="precio">$25.000</p>
+            <div class="atributos-producto">
+              <p><strong>Tamaño:</strong> 50 x 70 cm</p>
+              <p><strong>Papel:</strong> 250 g/m²</p>
+              <p><strong>Acabado:</strong> Mate</p>
+            </div>
+            <button class="btn-agregar" data-id="9">Agregar al Carrito</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- Formulario para agregar el articulo -->
+      <section class="agregar-articulo">
+        <h2>AGREGAR ARTÍCULO</h2>
+        <p>
+          ¿Tienes una idea para un nuevo producto? ¡Compártela con nosotros!
+          Completa el formulario y tu artículo aparecerá en la tienda.
+        </p>
+
+        <form id="formulario-producto">
+          <!-- Nombre -->
+          <div class="campo-formulario">
+            <label for="nombre-producto">Nombre del producto *</label>
+            <input
+              type="text"
+              id="nombre-producto"
+              placeholder="Ej: Camiseta Nutria Feliz"
+              required
+            />
+          </div>
+
+          <!-- Precio -->
+          <div class="campo-formulario">
+            <label for="precio-producto">Precio (COP) *</label>
+            <input
+              type="number"
+              id="precio-producto"
+              placeholder="Ej: 35000"
+              min="1000"
+              required
+            />
+            <small>El precio mínimo es 1.000 COP</small>
+          </div>
+
+          <!-- URL de la Imagen -->
+          <div class="campo-formulario">
+            <label for="imagen-producto">URL de la imagen *</label>
+            <input
+              type="url"
+              id="imagen-producto"
+              placeholder="https://ejemplo.com/imagen.jpg"
+              required
+            />
+          </div>
+
+          <!-- Atributo 1 - Talla -->
+          <div class="campo-formulario">
+            <label for="atributo1">Talla / Tamaño *</label>
+            <input
+              type="text"
+              id="atributo1"
+              placeholder="Ej: S, M, L, XL"
+              required
+            />
+          </div>
+
+          <!-- Atributo 2 - Material -->
+          <div class="campo-formulario">
+            <label for="atributo2">Material *</label>
+            <input
+              type="text"
+              id="atributo2"
+              placeholder="Ej: Algodón 100%"
+              required
+            />
+          </div>
+
+          <!-- Atributo 3 - Color -->
+          <div class="campo-formulario">
+            <label for="atributo3">Color *</label>
+            <input
+              type="text"
+              id="atributo3"
+              placeholder="Ej: Blanco / Azul marino"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn-agregar-producto">
+            Agregar Artículo
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,282 @@
+/*Paleta de colores de más a menos oscuro
+#005200 — verde muy oscuro
+#005c00
+#006600
+#007000
+#007b00
+#258d19
+#4ea93b
+#71c55b 
+#92e27a 
+#d4ffba — verde claro
+*/
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*---------------------------------GENERAL DEL DOCUMENTO*------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0px solid red;
+    font-family: 'Libertinus Serif', serif;
+}
+
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*------------------------------------BARRA - SUPERIOR---------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+.top-contenido {
+    background-color: #007b00;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    border-bottom: 6px solid #005200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo-tienda {
+    width: 110px;
+    height: 60px;
+}
+
+.top-contenido h1 {
+    color: #92e27a;
+    font-size: 32px;
+}
+
+.imagen-carrito {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+
+/*-------------------------------------------------------------------------------------------*/
+/*--------------------------------------CARRITO----------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*----------------------------------------HEADER---------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+.header-index {
+    background-image: url('../images/fondo_nutrialandia.png');
+    background-size: cover;        
+    background-position: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    border-bottom: 6px solid #005200;
+}
+
+.texto-header-index {
+    max-width: 55%;
+    text-align: center;   
+    padding-left: 100px;   
+    padding-right: 60px;   
+    display: flex;
+    flex-direction: column;
+    gap: 30px;  
+}
+
+.texto-header-index h1 {
+    font-size: 70px;
+    color: #005200;       
+    background-color: rgba(199, 255, 166, 0.6);
+    border: 3px solid #005200;
+    border-radius: 10px;
+   
+}
+
+.texto-header-index p {
+    font-size: 22px;
+    color: black;
+    background-color: rgba(199, 255, 166, 0.6);
+    border: 3px solid #005200;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*------------------------------------------MAIN---------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------*/
+/*--------------------------------------TIENDA (TARJETAS)------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+.tienda {
+    background: #d4ffba;
+    text-align: center;
+    padding: 50px;
+}
+
+.tienda h2 {
+    font-size: 45px;
+    color: #005200;
+    margin-bottom: 40px;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tarjeta-producto {
+    background: linear-gradient(115deg, #d4ffba, #aafb96);
+    border: 3px solid #258d19;
+    border-radius: 15px;
+    padding: 20px;
+    width: calc(33.33% - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: center;
+}
+
+.imagen-producto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #005200;
+    margin-bottom: 15px;
+}
+
+.tarjeta-producto h3 {
+    font-size: 20px;
+    color: #005200;
+    margin-bottom: 8px;
+}
+
+.precio {
+    font-size: 22px;
+    font-weight: bold;
+    color: #258d19;
+    margin-bottom: 10px;
+}
+
+.atributos-producto {
+    font-size: 17px;
+    color: #005200;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.atributos-producto p {
+    margin: 3px 0;
+    
+}
+
+.btn-agregar {
+    background-color: #258d19;
+    color: #d4ffba;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.btn-agregar:hover {
+    background-color: #1a6b12;
+    transform: scale(1.02);
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*----------------------------------AGREGAR ARTÍCULO-----------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+.agregar-articulo {
+    background: linear-gradient(135deg, #d4ffba, #71c55b);
+    text-align: center;
+    border-top: 6px solid #258d19;
+    padding: 50px;
+}
+
+.agregar-articulo h2 {
+    font-size: 45px;
+    color: #005200;
+    margin-bottom: 15px;
+}
+
+.agregar-articulo p {
+    font-size: 18px;
+    color: black;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+#formulario-producto {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #d4ffba;
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px solid #005200;
+}
+
+.campo-formulario {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.campo-formulario label {
+    display: block;
+    font-weight: bold;
+    color: #005200;
+    margin-bottom: 5px;
+}
+
+.campo-formulario input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #258d19;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.campo-formulario input:focus {
+    border-color: #005200;
+    outline: none;
+}
+
+.campo-formulario small {
+    display: block;
+    color: gray;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.btn-agregar-producto {
+    background-color: #005200;
+    color: #d4ffba;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+}
