@@ -105,9 +105,12 @@ h2 {
     background-image: url('../images/fondo_amenazas.png');
     background-size: cover;        
     background-position: center;
+    display: flex;
+    flex-direction: column;
     justify-content: left;
     padding-top: 120px;
     padding-bottom: 120px;
+    border-bottom: 6px solid #005200;
 }
 
 .texto-header-amenazas {
@@ -151,9 +154,16 @@ h2 {
 
 main {
     display: flex;
+    flex-direction: column;
     gap: 0;
     background: #d4ffba;
     min-height: 100vh;
+}
+
+ 
+.flex-indice-contenido{
+    display: flex;
+    flex-direction: row;
 }
 
 /*-------------------------------------------------------------------------------------------*/
@@ -162,7 +172,7 @@ main {
 
 .indice-sticky {
     position: sticky;
-    top: 60px;
+    top: 0px;
     height: 100vh;
     background: #005200;
     padding: 30px 20px;

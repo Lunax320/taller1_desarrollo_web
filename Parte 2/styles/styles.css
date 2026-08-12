@@ -50,13 +50,13 @@
 }
 
 .top-contenido h1 {
-    color: #92e27a;
-    font-size: 32px;
+    color: #d4ffba;
+    font-size: 38px;
 }
 
 .imagen-carrito {
-    width: 50px;
-    height: 50px;
+    width: 110px;
+    height: 60px;
     transition: transform 0.3s;
 }
 
@@ -65,7 +65,95 @@
 /*--------------------------------------CARRITO----------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
 
+.carrito-base {
+    display: flex;
+    align-items: center;
+}
 
+.imagen-carrito:hover {
+    transform: scale(1.2);
+}
+
+.carrito-desplegado {
+    display: none;                    /* Oculto por defecto */
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    background: #d4ffba;
+    border: 3px solid #005200;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 400px;
+}
+
+.carrito-desplegado.mostrar {
+    display: block;
+}
+
+.carrito-desplegado h3 {
+    color: #005200;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid #258d19;
+    padding-bottom: 10px;
+}
+
+.carrito-vacio {
+    color: gray;
+    text-align: center;
+    font-style: italic;
+}
+
+.item-carrito {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #d4ffba;
+}
+
+.item-carrito-imagen {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #258d19;
+}
+
+.item-carrito-info {
+    flex: 1;
+}
+
+.item-carrito-nombre {
+    font-weight: bold;
+    color: #005200;
+    font-size: 18px;
+}
+
+.item-carrito-precio {
+    color: black;
+    font-size: 18px;
+}
+
+.item-carrito-cantidad {
+    color: black;
+    font-size: 22px;
+}
+
+.btn-vaciar {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.btn-vaciar:hover {
+    background-color: #c0392b;
+}
 
 
 /*-------------------------------------------------------------------------------------------*/
@@ -209,6 +297,27 @@
 /*----------------------------------AGREGAR ARTÍCULO-----------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
 
+fieldset {
+  border: 3px solid #005200;
+  border-radius: 15px;
+  padding: 30px;
+  background: #d4ffba;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+legend {
+  font-size: 24px;
+  font-weight: bold;
+  color: #005200;
+  background: #d4ffba;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: 3px solid #005200;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .agregar-articulo {
     background: linear-gradient(135deg, #d4ffba, #71c55b);
     text-align: center;
@@ -229,13 +338,11 @@
     margin: 0 auto 30px auto;
 }
 
-#formulario-producto {
-    max-width: 600px;
-    margin: 0 auto;
-    background: #d4ffba;
-    padding: 30px;
-    border-radius: 15px;
-    border: 3px solid #005200;
+.circulo-formulario{
+    color:#005200;
+    display: flex;
+    gap: 40px;
+    padding-bottom: 20px;
 }
 
 .campo-formulario {
@@ -268,6 +375,52 @@
     color: gray;
     font-size: 13px;
     margin-top: 5px;
+}
+
+.opciones-radio {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.opcion-radio input[type="radio"] {
+    display: none;  /* Ocultar el radio original */
+}
+
+.radio-personalizado {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #005200;
+    background: white;
+    text-align: center;
+    line-height: 36px;
+    font-weight: bold;
+    color: #005200;
+    cursor: pointer;
+}
+
+/* BOTONES DE RADIO SACADOS DE LA WEB */
+.opcion-radio input[type="radio"]:checked + .radio-personalizado {
+    background: #258d19;
+    color: white;
+    border-color: #258d19;
+}
+
+.select-personalizado {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #258d19;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+    color: #005200;
+}
+
+.select-personalizado:focus {
+    border-color: #005200;
+    outline: none;
 }
 
 .btn-agregar-producto {

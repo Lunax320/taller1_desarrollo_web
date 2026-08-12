@@ -68,7 +68,6 @@ li:hover {
 .barra-navegacion {
     position: sticky;
     top: 0;           /* Pegar a 0 píxeles de la parte superior */
-    z-index: 1000;    /* La barra siempre quede por encima de fotos o textos */
 }
 
 /* Contenedor principal: una sola caja con borde */

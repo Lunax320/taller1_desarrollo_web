@@ -15,44 +15,59 @@
   </head>
 
   <body>
-    <!-- Por fuera para quedar fijado -->
-    <div class="top-contenido">
-      <!-- Imagen del logo -->
-      <img
-        class="logo-tienda"
-        src="../images/logo_nutrilandia.png"
-        alt="Logo Nutrialandia"
-      />
-      <h1>NUTRIALANDIA</h1>
-
-      <!-- Imagen carrito -->
-      <img
-        class="imagen-carrito"
-        src="../images/carrito_compras.png"
-        alt="Carrito de compras"
-      />
-    </div>
-
     <header class="header-tienda">
-      <!--DECORACIÓN DE HEADER -->
-      <div class="header-index">
-        <div class="texto-header-index">
-          <h1>NUTRIALANDIA</h1>
-          <p>
-            Este espacio está dedicado a mantener la causa de reivindicar el
-            verdadero significado de la nutriología y cuestionar todas las
-            implicaciones que su mal uso ha traído a la humanidad. Durante
-            décadas, el término ha sido tergiversado, asociado erróneamente con
-            prácticas que nada tienen que ver con el estudio y la conservación
-            de las nutrias. Es momento de devolverle su esencia, de educar y de
-            generar conciencia sobre la importancia de estos increíbles animales
-            en nuestros ecosistemas acuáticos.
-          </p>
+      <div class="top-contenido">
+        <!-- Imagen del logo -->
+        <img
+          class="logo-tienda"
+          src="../images/logo_nutrialandia.png"
+          alt="Logo Nutrialandia"
+        />
+        <h1>NUTRIALANDIA</h1>
+
+        <!-- Carrito base -->
+        <div class="carrito-desplegar">
+          <img
+            class="imagen-carrito"
+            src="../images/carrito_compras.png"
+            alt="Carrito de compras"
+            id="carrito-icono"
+          />
+
+          <!-- Carrito desplegado-->
+          <div class="carrito-desplegado" id="carrito-desplegado">
+            <h3>Mi Carrito</h3>
+            <div id="lista-carrito">
+              <p class="carrito-vacio">El carrito está vacío</p>
+            </div>
+            <button class="btn-vaciar" id="btn-vaciar">Vaciar Carrito</button>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
+      <!--DECORACIÓN DE HEADER -->
+      <div class="header-index">
+        <div class="texto-header-index">
+          <h1>NUTRIALANDIA</h1>
+          <p>
+            Bienvenido a Nutrialandia, la tienda donde cada compra tiene un
+            propósito. El 10% de todas nuestras ganancias se destina a
+            organizaciones que protegen el hábitat natural de las nutrias,
+            combaten la caza furtiva y educan a comunidades sobre la importancia
+            de estos increíbles animales en nuestros ecosistemas acuáticos. Cada
+            producto que adquieres no solo es único y lleno de estilo, sino que
+            también contribuye directamente a la conservación de las nutrias y
+            su entorno. En Nutrialandia creemos que el consumo responsable puede
+            marcar la diferencia, y tú eres parte de ese cambio. Gracias por
+            ayudar y ser parte de esta misión.
+            <strong style="color: #005200"
+              >¡Bienvenido a la familia Nutrialandia!</strong
+            >
+          </p>
+        </div>
+      </div>
       <section class="tienda">
         <h2>NUESTRA TIENDA</h2>
         <div class="contenedor-tarjetas" id="contenedor-tarjetas">
@@ -66,7 +81,7 @@
             <h3>Camiseta Nutria Flores</h3>
             <p class="precio">$35.000</p>
             <div class="atributos-producto">
-              <p><strong>Talla:</strong> S, M, L, XL</p>
+              <p><strong>Tamaño:</strong> S, M, L, XL</p>
               <p><strong>Material:</strong> Algodón 100%</p>
               <p><strong>Color:</strong> Blanco / Azul marino</p>
             </div>
@@ -186,10 +201,8 @@
             <p class="precio">$15.000</p>
             <div class="atributos-producto">
               <p><strong>Páginas:</strong> 24 ilustraciones</p>
-              <p><strong>Temática:</strong> Nutrias en su hábitat natural</p>
-              <p>
-                <strong>Incluye:</strong> Diseños florales y patrones relajantes
-              </p>
+              <p><strong>Temática:</strong> Habitats de nutrias</p>
+              <p><strong>Incluye:</strong> Diseños florales</p>
             </div>
             <button class="btn-agregar" data-id="8">Agregar al Carrito</button>
           </article>
@@ -214,87 +227,126 @@
       </section>
 
       <!-- Formulario para agregar el articulo -->
+
       <section class="agregar-articulo">
         <h2>AGREGAR ARTÍCULO</h2>
         <p>
           ¿Tienes una idea para un nuevo producto? ¡Compártela con nosotros!
-          Completa el formulario y tu artículo aparecerá en la tienda.
+          Completa el formulario y tu artículo aparecerá en la tienda
         </p>
-
         <form id="formulario-producto">
-          <!-- Nombre -->
-          <div class="campo-formulario">
-            <label for="nombre-producto">Nombre del producto *</label>
-            <input
-              type="text"
-              id="nombre-producto"
-              placeholder="Ej: Camiseta Nutria Feliz"
-              required
-            />
-          </div>
+          <fieldset>
+            <legend>Información Producto</legend>
 
-          <!-- Precio -->
-          <div class="campo-formulario">
-            <label for="precio-producto">Precio (COP) *</label>
-            <input
-              type="number"
-              id="precio-producto"
-              placeholder="Ej: 35000"
-              min="1000"
-              required
-            />
-            <small>El precio mínimo es 1.000 COP</small>
-          </div>
+            <!-- Nombre -->
+            <div class="campo-formulario">
+              <label for="nombre-producto">Nombre del producto *</label>
+              <input
+                type="text"
+                id="nombre-producto"
+                placeholder="Ej: Camiseta Nutria Feliz"
+                name="nombre"
+                required
+              />
+            </div>
 
-          <!-- URL de la Imagen -->
-          <div class="campo-formulario">
-            <label for="imagen-producto">URL de la imagen *</label>
-            <input
-              type="url"
-              id="imagen-producto"
-              placeholder="https://ejemplo.com/imagen.jpg"
-              required
-            />
-          </div>
+            <!-- Precio -->
+            <div class="campo-formulario">
+              <label for="precio-producto">Precio (COP) *</label>
+              <input
+                type="number"
+                id="precio-producto"
+                placeholder="Ej: 35000"
+                min="1000"
+                name="precio"
+                required
+              />
+              <small>El precio mínimo es 1.000 COP</small>
+            </div>
 
-          <!-- Atributo 1 - Talla -->
-          <div class="campo-formulario">
-            <label for="atributo1">Talla / Tamaño *</label>
-            <input
-              type="text"
-              id="atributo1"
-              placeholder="Ej: S, M, L, XL"
-              required
-            />
-          </div>
+            <!-- URL de la Imagen -->
+            <div class="campo-formulario">
+              <label for="imagen-producto">URL de la imagen *</label>
+              <input
+                type="url"
+                id="imagen-producto"
+                placeholder="https://ejemplo.com/imagen.jpg"
+                name="imagen"
+                required
+              />
+            </div>
 
-          <!-- Atributo 2 - Material -->
-          <div class="campo-formulario">
-            <label for="atributo2">Material *</label>
-            <input
-              type="text"
-              id="atributo2"
-              placeholder="Ej: Algodón 100%"
-              required
-            />
-          </div>
+            <!-- Atributo 1: Talla -->
+            <div class="campo-formulario">
+              <label>Talla / Tamaño *</label>
+              <div class="opciones-radio" id="grupo-talla">
+                <label class="opcion-radio">
+                  <input type="radio" name="talla" value="XS" checked />
+                  <span class="radio-personalizado">XS</span>
+                </label>
+                <label class="opcion-radio">
+                  <input type="radio" name="talla" value="S" />
+                  <span class="radio-personalizado">S</span>
+                </label>
+                <label class="opcion-radio">
+                  <input type="radio" name="talla" value="M" />
+                  <span class="radio-personalizado">M</span>
+                </label>
+                <label class="opcion-radio">
+                  <input type="radio" name="talla" value="L" />
+                  <span class="radio-personalizado">L</span>
+                </label>
+                <label class="opcion-radio">
+                  <input type="radio" name="talla" value="XL" />
+                  <span class="radio-personalizado">XL</span>
+                </label>
+              </div>
+            </div>
 
-          <!-- Atributo 3 - Color -->
-          <div class="campo-formulario">
-            <label for="atributo3">Color *</label>
-            <input
-              type="text"
-              id="atributo3"
-              placeholder="Ej: Blanco / Azul marino"
-              required
-            />
-          </div>
+            <!-- Atributo 2 - Material -->
+            <div class="campo-formulario">
+              <label for="material-producto">Material *</label>
+              <select
+                id="material-producto"
+                class="select-personalizado"
+                name="material"
+                required
+              >
+                <option value="">Selecciona un material</option>
+                <option value="Algodón 100%">Algodón 100%</option>
+                <option value="Algodón / Poliéster">Algodón / Poliéster</option>
+                <option value="Cerámica">Cerámica</option>
+                <option value="Cerámica esmaltada">Cerámica esmaltada</option>
+                <option value="Vinil">Vinil</option>
+                <option value="Acrílico">Acrílico</option>
+                <option value="Felpa hipoalergénica">
+                  Felpa hipoalergénica
+                </option>
+                <option value="Otro">Otro (especificar)</option>
+              </select>
+            </div>
 
-          <button type="submit" class="btn-agregar-producto">
-            Agregar Artículo
-          </button>
+            <!-- Atributo 3 - Color -->
+            <div class="campo-formulario">
+              <label for="color-producto">Color *</label>
+              <div class="campo-color">
+                <input
+                  type="text"
+                  id="color-producto"
+                  placeholder="Ej: Blanco / Azul marino"
+                  class="input-color-texto"
+                  name="color"
+                  required
+                />
+              </div>
+            </div>
+            <button type="submit" id="btn-agregar-producto">
+              Agregar Producto
+            </button>
+          </fieldset>
         </form>
       </section>
     </main>
   </body>
+  <script src="../js/script.js"></script>
 </html>

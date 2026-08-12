@@ -22,29 +22,32 @@
       Bienvenido a la mejor página del mundo mundial sobre nutriología 🦦
       <strong>#solofactos</strong>
     </p>
-    <!--BARRA DE NAVEGACIÓN-->
-    <nav class="barra-navegacion">
-      <ul>
-        <li>
-          <a href="index.html"><strong>Nutriología</strong></a>
-        </li>
-        <li>
-          <a href="sobrenutrias.html"><strong>Sobre Nutrias</strong></a>
-        </li>
-        <li>
-          <a href="ventajas.html"><strong>Ventajas</strong></a>
-        </li>
-        <li>
-          <a href="desafios.html"><strong>Desafíos</strong></a>
-        </li>
-        <li>
-          <a href="amenazas.html"><strong>Amenazas</strong></a>
-        </li>
-      </ul>
-    </nav>
 
     <header>
-      <!--DECORACIÓN DE HEADER -->
+      <!--BARRA DE NAVEGACIÓN-->
+      <nav class="barra-navegacion">
+        <ul>
+          <li>
+            <a href="index.html"><strong>Nutriología</strong></a>
+          </li>
+          <li>
+            <a href="sobrenutrias.html"><strong>Sobre Nutrias</strong></a>
+          </li>
+          <li>
+            <a href="ventajas.html"><strong>Ventajas</strong></a>
+          </li>
+          <li>
+            <a href="desafios.html"><strong>Desafíos</strong></a>
+          </li>
+          <li>
+            <a href="amenazas.html"><strong>Amenazas</strong></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!--DECORACIÓN DE MAIN -->
       <div class="header-amenazas">
         <div class="texto-header-amenazas">
           <h1>¿QUÉ AMENAZAS EXISTEN?</h1>
@@ -57,324 +60,335 @@
           </p>
         </div>
       </div>
-    </header>
+      <div class="flex-indice-contenido">
+        <!-- Columna izquierda para usar el indice -->
+        <!-- aside para usar una barra lateral-->
+        <aside class="indice-sticky">
+          <div class="indice-contenido">
+            <h2>ÍNDICE</h2>
+            <ul>
+              <li>
+                <a href="#perdida-habitat">Pérdida de Hábitat</a>
+                <ul class="sub-indice">
+                  <li><a href="#deforestacion">Deforestación de Riberas</a></li>
+                  <li><a href="#contaminacion">Contaminación del Agua</a></li>
+                  <li><a href="#urbanizacion">Urbanización Costera</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#caza">Caza y Pesca Ilegal</a>
+                <ul class="sub-indice">
+                  <li><a href="#caza-piel">Caza por su Piel</a></li>
+                  <li><a href="#pesca-incidental">Pesca Incidental</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#cambio-climatico">Cambio Climático</a>
+                <ul class="sub-indice">
+                  <li>
+                    <a href="#aumento-temperatura">Aumento de Temperatura</a>
+                  </li>
+                  <li><a href="#deshielo">Deshielo de Glaciares</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#conflictos">Conflictos con Humanos</a>
+                <ul class="sub-indice">
+                  <li><a href="#pesca-conflictos">Competencia por Pesca</a></li>
+                  <li>
+                    <a href="#infraestructura">Infraestructura Acuática</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </aside>
 
-    <main>
-      <!-- Columna izquierda para usar el indice -->
-      <!-- aside para usar una barra lateral-->
-      <aside class="indice-sticky">
-        <div class="indice-contenido">
-          <h2>ÍNDICE</h2>
-          <ul>
-            <li>
-              <a href="#perdida-habitat">Pérdida de Hábitat</a>
-              <ul class="sub-indice">
-                <li><a href="#deforestacion">Deforestación de Riberas</a></li>
-                <li><a href="#contaminacion">Contaminación del Agua</a></li>
-                <li><a href="#urbanizacion">Urbanización Costera</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#caza">Caza y Pesca Ilegal</a>
-              <ul class="sub-indice">
-                <li><a href="#caza-piel">Caza por su Piel</a></li>
-                <li><a href="#pesca-incidental">Pesca Incidental</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#cambio-climatico">Cambio Climático</a>
-              <ul class="sub-indice">
-                <li>
-                  <a href="#aumento-temperatura">Aumento de Temperatura</a>
-                </li>
-                <li><a href="#deshielo">Deshielo de Glaciares</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#conflictos">Conflictos con Humanos</a>
-              <ul class="sub-indice">
-                <li><a href="#pesca-conflictos">Competencia por Pesca</a></li>
-                <li><a href="#infraestructura">Infraestructura Acuática</a></li>
-              </ul>
-            </li>
-          </ul>
+        <!-- Columna derecha con el contenido normal -->
+        <div class="contenido-principal">
+          <!-- Sección 1 - Perdida de hábitat -->
+          <section id="perdida-habitat" class="seccion-amenazas">
+            <h2>PÉRDIDA DE HÁBITAT</h2>
+            <p class="descripcion-seccion">
+              La destrucción de los ecosistemas acuáticos es una de las
+              principales amenazas que enfrentan las nutrias en todo el mundo.
+              La intervención humana ha fragmentado y degradado los lugares
+              donde estas especies viven, se reproducen y se alimentan.
+            </p>
+
+            <!-- Subsección 1 -->
+            <div id="deforestacion" class="subseccion-gradiente">
+              <h3>Deforestación de Riberas</h3>
+              <div class="contenido-subseccion">
+                <img
+                  src="../images/deforestacion_riberas.jpg"
+                  alt="Deforestación en riberas de ríos"
+                  class="imagen-subseccion"
+                />
+                <div class="texto-subseccion">
+                  <p>
+                    La tala de árboles en las orillas de ríos y lagos elimina la
+                    vegetación que protege los hábitats de las nutrias.
+                  </p>
+                  <!-- Lista consecuencias -->
+                  <ul class="lista-no-ordenada">
+                    <li>Erosión de las riberas y pérdida de madrigueras</li>
+                    <li>
+                      Reducción de la sombra que regula la temperatura del agua
+                    </li>
+                    <li>Disminución de la disponibilidad de alimento</li>
+                    <li>Fragmentación de poblaciones de nutrias</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Subsección 2 -->
+            <div id="contaminacion" class="subseccion-gradiente">
+              <h3>Contaminación del Agua</h3>
+              <div class="contenido-subseccion">
+                <img
+                  src="../images/contaminacion_agua.jpg"
+                  alt="Contaminación de ríos"
+                  class="imagen-subseccion"
+                />
+                <div class="texto-subseccion">
+                  <p>
+                    Los desechos industriales, agrícolas y domésticos contaminan
+                    los cuerpos de agua donde viven las nutrias.
+                  </p>
+                  <!-- Lista consecuncias -->
+                  <ol class="lista-ordenada">
+                    <li>Metales pesados y productos químicos tóxicos</li>
+                    <li>Plásticos y microplásticos en el agua</li>
+                    <li>Fertilizantes que generan floraciones de algas</li>
+                    <li>Derrames de petróleo en zonas costeras</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Subsección 3 -->
+            <div id="urbanizacion" class="subseccion-gradiente">
+              <h3>Urbanización Costera</h3>
+              <div class="contenido-subseccion">
+                <img
+                  src="../images/urbanizacion_costera.webp"
+                  alt="Urbanización en zonas costeras"
+                  class="imagen-subseccion"
+                />
+                <div class="texto-subseccion">
+                  <p>
+                    El crecimiento de ciudades y complejos turísticos en las
+                    costas destruye los hábitats de nutrias marinas.
+                  </p>
+                  <!-- Lista efectos negativos -->
+                  <ul class="lista-no-ordenada">
+                    <li>Pérdida de zonas de descanso y reproducción</li>
+                    <li>Aumento del ruido y tráfico de embarcaciones</li>
+                    <li>
+                      Contaminación lumínica que afecta sus ciclos biológicos
+                    </li>
+                    <li>Alteración de las corrientes marinas</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Sección 2 - Caza y pesca ilegal -->
+          <section id="caza" class="seccion-amenazas">
+            <h2>CAZA Y PESCA ILEGAL</h2>
+            <p class="descripcion-seccion">
+              A pesar de las leyes de protección, la caza furtiva y la pesca
+              incidental siguen siendo amenazas graves para las poblaciones de
+              nutrias en diversas regiones del mundo.
+            </p>
+
+            <!-- Subsección 1 -->
+            <div id="caza-piel" class="subseccion-gradiente">
+              <h3>Caza por su Piel</h3>
+              <div class="contenido-subseccion">
+                <img
+                  src="../images/cazar_mutrias.jpg"
+                  alt="Caza de nutrias por su piel"
+                  class="imagen-subseccion"
+                />
+                <div class="texto-subseccion">
+                  <p>
+                    La caza de nutrias por su valiosa piel ha sido
+                    históricamente una de las principales causas de su
+                    disminución.
+                  </p>
+                  <!-- Lista daños -->
+                  <ol class="lista-ordenada">
+                    <li>Millones de nutrias cazadas en el siglo XIX</li>
+                    <li>La nutria marina casi extinta por esta práctica</li>
+                    <li>
+                      Comercio ilegal que aún persiste en algunas regiones
+                    </li>
+                    <li>
+                      Especies como la nutria gigante son las más afectadas
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Subsección 2 -->
+            <div id="pesca-incidental" class="subseccion-gradiente">
+              <h3>Pesca Incidental</h3>
+              <div class="contenido-subseccion">
+                <img
+                  src="../images/red_contaminacion.jpg"
+                  alt="Nutria atrapada en redes de pesca"
+                  class="imagen-subseccion"
+                />
+                <div class="texto-subseccion">
+                  <p>
+                    Las nutrias quedan atrapadas en redes y trampas de pesca no
+                    diseñadas para ellas, causando su muerte por ahogamiento.
+                    Algunas soluciones pueden ser:
+                  </p>
+                  <!-- Lista soluciones -->
+                  <ul class="lista-no-ordenada">
+                    <li>Implementar redes de pesca selectivas</li>
+                    <li>
+                      Crear áreas de pesca prohibida para proteger hábitats
+                    </li>
+                    <li>Capacitar a pescadores en técnicas sostenibles</li>
+                    <li>Monitorear las capturas accidentales</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Sección 3 - Cambio climático -->
+          <section id="cambio-climatico" class="seccion-amenazas">
+            <h2>CAMBIO CLIMÁTICO</h2>
+            <p class="descripcion-seccion">
+              El calentamiento global y sus efectos están transformando los
+              ecosistemas acuáticos, poniendo en peligro la supervivencia de las
+              nutrias y las especies de las que dependen.
+            </p>
+
+            <!-- Subsección 1 -->
+            <div id="aumento-temperatura" class="subseccion-gradiente">
+              <h3>Aumento de Temperatura</h3>
+              <div class="contenido-subseccion">
+                <img
+                  src="../images/temperatura_marina.png"
+                  alt="Efectos del aumento de temperatura"
+                  class="imagen-subseccion"
+                />
+                <div class="texto-subseccion">
+                  <p>
+                    El incremento de la temperatura del agua afecta la
+                    disponibilidad de alimento y la reproducción de las nutrias.
+                  </p>
+                  <!-- Lista efectos -->
+                  <ol class="lista-ordenada">
+                    <li>Reducción de poblaciones de peces y crustáceos</li>
+                    <li>Alteración de los ciclos reproductivos</li>
+                    <li>Aumento de enfermedades en poblaciones acuáticas</li>
+                    <li>
+                      Cambio en la distribución geográfica de las especies
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Subsección 2 -->
+            <div id="deshielo" class="subseccion-gradiente">
+              <h3>Deshielo de Glaciares</h3>
+              <div class="contenido-subseccion">
+                <img
+                  src="../images/glaciales_derretidos.webp"
+                  alt="Deshielo de glaciares"
+                  class="imagen-subseccion"
+                />
+                <div class="texto-subseccion">
+                  <p>
+                    El derretimiento de glaciares y capas de hielo altera los
+                    ecosistemas de agua dulce donde viven muchas especies de
+                    nutrias.
+                  </p>
+                  <!-- Lista consecuencias -->
+                  <ul class="lista-no-ordenada">
+                    <li>Cambio en los caudales de ríos y arroyos</li>
+                    <li>Aumento del nivel del mar en zonas costeras</li>
+                    <li>Pérdida de hábitats en regiones de montaña</li>
+                    <li>Alteración de la salinidad en estuarios</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Sección 4 - Conflictos con humanos -->
+          <section id="conflictos" class="seccion-amenazas">
+            <h2>CONFLICTOS CON HUMANOS</h2>
+            <p class="descripcion-seccion">
+              La creciente interacción entre humanos y nutrias genera conflictos
+              que muchas veces resultan en la muerte de estos animales o en la
+              destrucción de sus hábitats.
+            </p>
+
+            <!-- Subsección 1 -->
+            <div id="pesca-conflictos" class="subseccion-gradiente">
+              <h3>Competencia por Pesca</h3>
+              <div class="contenido-subseccion">
+                <img
+                  src="../images/conflicto_pesca_nutrias.jpg"
+                  alt="Competencia entre pescadores y nutrias"
+                  class="imagen-subseccion"
+                />
+                <div class="texto-subseccion">
+                  <p>
+                    Los pescadores ven a las nutrias como competencia por los
+                    recursos pesqueros, lo que genera persecución y muerte de
+                    estos animales. Algunas soluciones son:
+                  </p>
+                  <!-- Lista soluciones -->
+                  <ul class="lista-no-ordenada">
+                    <li>Promover la pesca sostenible</li>
+                    <li>Crear programas de compensación para pescadores</li>
+                    <li>Educar sobre el rol ecológico de las nutrias</li>
+                    <li>Establecer zonas de exclusión pesquera</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Subsección 2 -->
+            <div id="infraestructura" class="subseccion-gradiente">
+              <h3>Infraestructura Acuática</h3>
+              <div class="contenido-subseccion">
+                <img
+                  src="../images/infraestructura_acuatica.png"
+                  alt="Infraestructura en ríos"
+                  class="imagen-subseccion"
+                />
+                <div class="texto-subseccion">
+                  <p>
+                    Presas, canales y otras infraestructuras acuáticas
+                    fragmentan los hábitats de las nutrias y obstaculizan su
+                    movimiento.
+                  </p>
+                  <!-- Lista problemas -->
+                  <ol class="lista-ordenada">
+                    <li>Bloqueo de rutas migratorias</li>
+                    <li>Reducción del flujo de agua en ríos</li>
+                    <li>Cambio en la profundidad y temperatura del agua</li>
+                    <li>Mayor riesgo de atropellos en carreteras cercanas</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-      </aside>
-
-      <!-- Columna derecha con el contenido normal -->
-      <div class="contenido-principal">
-        <!-- Sección 1 - Perdida de hábitat -->
-        <section id="perdida-habitat" class="seccion-amenazas">
-          <h2>PÉRDIDA DE HÁBITAT</h2>
-          <p class="descripcion-seccion">
-            La destrucción de los ecosistemas acuáticos es una de las
-            principales amenazas que enfrentan las nutrias en todo el mundo. La
-            intervención humana ha fragmentado y degradado los lugares donde
-            estas especies viven, se reproducen y se alimentan.
-          </p>
-
-          <!-- Subsección 1 -->
-          <div id="deforestacion" class="subseccion-gradiente">
-            <h3>Deforestación de Riberas</h3>
-            <div class="contenido-subseccion">
-              <img
-                src="../images/deforestacion_riberas.jpg"
-                alt="Deforestación en riberas de ríos"
-                class="imagen-subseccion"
-              />
-              <div class="texto-subseccion">
-                <p>
-                  La tala de árboles en las orillas de ríos y lagos elimina la
-                  vegetación que protege los hábitats de las nutrias.
-                </p>
-                <!-- Lista consecuencias -->
-                <ul class="lista-no-ordenada">
-                  <li>Erosión de las riberas y pérdida de madrigueras</li>
-                  <li>
-                    Reducción de la sombra que regula la temperatura del agua
-                  </li>
-                  <li>Disminución de la disponibilidad de alimento</li>
-                  <li>Fragmentación de poblaciones de nutrias</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Subsección 2 -->
-          <div id="contaminacion" class="subseccion-gradiente">
-            <h3>Contaminación del Agua</h3>
-            <div class="contenido-subseccion">
-              <img
-                src="../images/contaminacion_agua.jpg"
-                alt="Contaminación de ríos"
-                class="imagen-subseccion"
-              />
-              <div class="texto-subseccion">
-                <p>
-                  Los desechos industriales, agrícolas y domésticos contaminan
-                  los cuerpos de agua donde viven las nutrias.
-                </p>
-                <!-- Lista consecuncias -->
-                <ol class="lista-ordenada">
-                  <li>Metales pesados y productos químicos tóxicos</li>
-                  <li>Plásticos y microplásticos en el agua</li>
-                  <li>Fertilizantes que generan floraciones de algas</li>
-                  <li>Derrames de petróleo en zonas costeras</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-
-          <!-- Subsección 3 -->
-          <div id="urbanizacion" class="subseccion-gradiente">
-            <h3>Urbanización Costera</h3>
-            <div class="contenido-subseccion">
-              <img
-                src="../images/urbanizacion_costera.webp"
-                alt="Urbanización en zonas costeras"
-                class="imagen-subseccion"
-              />
-              <div class="texto-subseccion">
-                <p>
-                  El crecimiento de ciudades y complejos turísticos en las
-                  costas destruye los hábitats de nutrias marinas.
-                </p>
-                <!-- Lista efectos negativos -->
-                <ul class="lista-no-ordenada">
-                  <li>Pérdida de zonas de descanso y reproducción</li>
-                  <li>Aumento del ruido y tráfico de embarcaciones</li>
-                  <li>
-                    Contaminación lumínica que afecta sus ciclos biológicos
-                  </li>
-                  <li>Alteración de las corrientes marinas</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Sección 2 - Caza y pesca ilegal -->
-        <section id="caza" class="seccion-amenazas">
-          <h2>CAZA Y PESCA ILEGAL</h2>
-          <p class="descripcion-seccion">
-            A pesar de las leyes de protección, la caza furtiva y la pesca
-            incidental siguen siendo amenazas graves para las poblaciones de
-            nutrias en diversas regiones del mundo.
-          </p>
-
-          <!-- Subsección 1 -->
-          <div id="caza-piel" class="subseccion-gradiente">
-            <h3>Caza por su Piel</h3>
-            <div class="contenido-subseccion">
-              <img
-                src="../images/cazar_mutrias.jpg"
-                alt="Caza de nutrias por su piel"
-                class="imagen-subseccion"
-              />
-              <div class="texto-subseccion">
-                <p>
-                  La caza de nutrias por su valiosa piel ha sido históricamente
-                  una de las principales causas de su disminución.
-                </p>
-                <!-- Lista daños -->
-                <ol class="lista-ordenada">
-                  <li>Millones de nutrias cazadas en el siglo XIX</li>
-                  <li>La nutria marina casi extinta por esta práctica</li>
-                  <li>Comercio ilegal que aún persiste en algunas regiones</li>
-                  <li>Especies como la nutria gigante son las más afectadas</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-
-          <!-- Subsección 2 -->
-          <div id="pesca-incidental" class="subseccion-gradiente">
-            <h3>Pesca Incidental</h3>
-            <div class="contenido-subseccion">
-              <img
-                src="../images/red_contaminacion.jpg"
-                alt="Nutria atrapada en redes de pesca"
-                class="imagen-subseccion"
-              />
-              <div class="texto-subseccion">
-                <p>
-                  Las nutrias quedan atrapadas en redes y trampas de pesca no
-                  diseñadas para ellas, causando su muerte por ahogamiento.
-                  Algunas soluciones pueden ser:
-                </p>
-                <!-- Lista soluciones -->
-                <ul class="lista-no-ordenada">
-                  <li>Implementar redes de pesca selectivas</li>
-                  <li>Crear áreas de pesca prohibida para proteger hábitats</li>
-                  <li>Capacitar a pescadores en técnicas sostenibles</li>
-                  <li>Monitorear las capturas accidentales</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Sección 3 - Cambio climático -->
-        <section id="cambio-climatico" class="seccion-amenazas">
-          <h2>CAMBIO CLIMÁTICO</h2>
-          <p class="descripcion-seccion">
-            El calentamiento global y sus efectos están transformando los
-            ecosistemas acuáticos, poniendo en peligro la supervivencia de las
-            nutrias y las especies de las que dependen.
-          </p>
-
-          <!-- Subsección 1 -->
-          <div id="aumento-temperatura" class="subseccion-gradiente">
-            <h3>Aumento de Temperatura</h3>
-            <div class="contenido-subseccion">
-              <img
-                src="../images/temperatura_marina.png"
-                alt="Efectos del aumento de temperatura"
-                class="imagen-subseccion"
-              />
-              <div class="texto-subseccion">
-                <p>
-                  El incremento de la temperatura del agua afecta la
-                  disponibilidad de alimento y la reproducción de las nutrias.
-                </p>
-                <!-- Lista efectos -->
-                <ol class="lista-ordenada">
-                  <li>Reducción de poblaciones de peces y crustáceos</li>
-                  <li>Alteración de los ciclos reproductivos</li>
-                  <li>Aumento de enfermedades en poblaciones acuáticas</li>
-                  <li>Cambio en la distribución geográfica de las especies</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-
-          <!-- Subsección 2 -->
-          <div id="deshielo" class="subseccion-gradiente">
-            <h3>Deshielo de Glaciares</h3>
-            <div class="contenido-subseccion">
-              <img
-                src="../images/glaciales_derretidos.webp"
-                alt="Deshielo de glaciares"
-                class="imagen-subseccion"
-              />
-              <div class="texto-subseccion">
-                <p>
-                  El derretimiento de glaciares y capas de hielo altera los
-                  ecosistemas de agua dulce donde viven muchas especies de
-                  nutrias.
-                </p>
-                <!-- Lista consecuencias -->
-                <ul class="lista-no-ordenada">
-                  <li>Cambio en los caudales de ríos y arroyos</li>
-                  <li>Aumento del nivel del mar en zonas costeras</li>
-                  <li>Pérdida de hábitats en regiones de montaña</li>
-                  <li>Alteración de la salinidad en estuarios</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Sección 4 - Conflictos con humanos -->
-        <section id="conflictos" class="seccion-amenazas">
-          <h2>CONFLICTOS CON HUMANOS</h2>
-          <p class="descripcion-seccion">
-            La creciente interacción entre humanos y nutrias genera conflictos
-            que muchas veces resultan en la muerte de estos animales o en la
-            destrucción de sus hábitats.
-          </p>
-
-          <!-- Subsección 1 -->
-          <div id="pesca-conflictos" class="subseccion-gradiente">
-            <h3>Competencia por Pesca</h3>
-            <div class="contenido-subseccion">
-              <img
-                src="../images/conflicto_pesca_nutrias.jpg"
-                alt="Competencia entre pescadores y nutrias"
-                class="imagen-subseccion"
-              />
-              <div class="texto-subseccion">
-                <p>
-                  Los pescadores ven a las nutrias como competencia por los
-                  recursos pesqueros, lo que genera persecución y muerte de
-                  estos animales. Algunas soluciones son:
-                </p>
-                <!-- Lista soluciones -->
-                <ul class="lista-no-ordenada">
-                  <li>Promover la pesca sostenible</li>
-                  <li>Crear programas de compensación para pescadores</li>
-                  <li>Educar sobre el rol ecológico de las nutrias</li>
-                  <li>Establecer zonas de exclusión pesquera</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Subsección 2 -->
-          <div id="infraestructura" class="subseccion-gradiente">
-            <h3>Infraestructura Acuática</h3>
-            <div class="contenido-subseccion">
-              <img
-                src="../images/infraestructura_acuatica.png"
-                alt="Infraestructura en ríos"
-                class="imagen-subseccion"
-              />
-              <div class="texto-subseccion">
-                <p>
-                  Presas, canales y otras infraestructuras acuáticas fragmentan
-                  los hábitats de las nutrias y obstaculizan su movimiento.
-                </p>
-                <!-- Lista problemas -->
-                <ol class="lista-ordenada">
-                  <li>Bloqueo de rutas migratorias</li>
-                  <li>Reducción del flujo de agua en ríos</li>
-                  <li>Cambio en la profundidad y temperatura del agua</li>
-                  <li>Mayor riesgo de atropellos en carreteras cercanas</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </section>
       </div>
     </main>
 
